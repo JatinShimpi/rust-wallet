@@ -64,8 +64,20 @@ CLI Commands
 ## 🧪 Testing
 Run unit tests for the smart contract:
 
-    ```bash
     cargo test -- --test-threads=1
 
-
 ## 🔒 Security
+1. Authorized Users: Modify src/wallet_backend/security.rs to whitelist principals.
+2. Agent Configuration: The CLI uses http://localhost:8000 by default. Change this in wallet_cli/main.rs for testnet:
+   ```rust
+   .with_url("https://ic0.app")
+
+## 🌐 Deployment to ICP Testnet
+1. Ensure DFX is authenticated:
+   ```bash
+   dfx identity new dev --storage-mode=plaintext
+   dfx identity use dev
+
+2. Deploy:
+   ```bash
+   dfx deploy --network ic_testnet wallet_backend
