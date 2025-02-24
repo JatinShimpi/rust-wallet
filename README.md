@@ -51,7 +51,6 @@ CLI Commands
     cargo run -- send <PRINCIPAL_ID> 100
 
     Example:
-    ```bash
     cargo run -- send 6sgbu-nyaaa-aaaah-qcxga-cai 500
 
 2. Check Balance:
@@ -60,14 +59,13 @@ CLI Commands
     cargo run -- balance <PRINCIPAL_ID>
 
     Example:
-    ```bash
     cargo run -- balance 6sgbu-nyaaa-aaaah-qcxga-cai
 
 ## 🧪 Testing
 Run unit tests for the smart contract:
 
-      ```bash
-       cargo test -- --test-threads=1
+    ```bash
+    cargo test -- --test-threads=1
 
 
 ## 🔒 Security
