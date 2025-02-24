@@ -1,0 +1,11 @@
+[package]
+name = "icp-token-wallet"
+version = "0.1.0"
+
+[dependencies]
+candid = "0.8.2"
+ic-cdk = "0.6.0"
+serde = { version = "1.0", features = ["derive"] }
+clap = { version = "3.2", features = ["derive"] }
+ic-agent = "0.21.0"
+tokio = { version = "1.0", features = ["full"] }
